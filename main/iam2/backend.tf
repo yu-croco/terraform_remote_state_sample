@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "sample-tf"
-    key    = "remote_state_2"
+    key    = "terraform.tfstate2"
     region = "ap-northeast-1"
   }
 }
@@ -13,7 +13,15 @@ data "terraform_remote_state" "sample_tf" {
 
   config = {
     bucket = "sample-tf"
-    key    = "remote_state_1"
+    key    = "terraform.tfstate1"
     region = "ap-northeast-1"
   }
 }
+
+//terraform {
+//  backend "s3" {
+//    bucket = "sample-tf"
+//    key    = "remote_state_1"
+//    region = "ap-northeast-1"
+//  }
+//}

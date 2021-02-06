@@ -1,3 +1,3 @@
 module "sample_tf" {
-  source = "../../resource/iam"
+  source = "../../modules/iam"
 }
