@@ -4,6 +4,7 @@ define terraform-setup
 endef
 
 init:
+	cd ./main/s3 && $(terraform-setup) && terraform apply -auto-approve
 	cd ./main/iam && $(terraform-setup)
 	cd ./main/iam2 && $(terraform-setup)
 
@@ -35,6 +36,21 @@ iam2/apply:
 .PHONY: iam2/destroy
 iam2/destroy:
 	cd ./main/iam2 && \
+	terraform destroy
+
+.Phony: s3/plan
+s3/plan:
+	cd ./main/s3 && \
+	terraform plan
+
+.Phony: s3/apply
+s3/apply:
+	cd ./main/s3 && \
+	terraform apply
+
+.Phony: s3/destroy
+s3/destroy:
+	cd ./main/s3 && \
 	terraform destroy
 
 .PHONY: fmt

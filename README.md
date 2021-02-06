@@ -39,6 +39,7 @@ $ make iam2/apply
 
 ```
 $ make iam2/destroy
-
 $ make iam/destroy
+# S3のファイルをすべて削除した上で以下を実行する
+$ s3/destroy
 ```
