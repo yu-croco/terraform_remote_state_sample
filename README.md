@@ -12,7 +12,7 @@
 ├── main // tfファイルを扱うエントリポイント
 │   ├── iam
 │   └── iam2
-└── resource // mainが参照するリソース置き場
+└── modules // mainが参照するリソース置き場
     ├── iam
     └── iam2
 ```

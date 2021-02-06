@@ -17,11 +17,3 @@ data "terraform_remote_state" "sample_tf" {
     region = "ap-northeast-1"
   }
 }
-
-//terraform {
-//  backend "s3" {
-//    bucket = "sample-tf"
-//    key    = "remote_state_1"
-//    region = "ap-northeast-1"
-//  }
-//}
