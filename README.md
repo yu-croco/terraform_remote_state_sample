@@ -11,7 +11,8 @@
 ├── README.md
 ├── main // tfファイルを扱うエントリポイント
 │   ├── iam
-│   └── iam2
+│   ├── iam2
+│   └── s3
 └── modules // mainが参照するリソース置き場
     ├── iam
     └── iam2
