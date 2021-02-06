@@ -1,6 +1,6 @@
 # Terraform terraform_remote_stateについて軽く触るやつ
-## 前提
-- `terraform_remote_state` を使ったので備忘録を兼ねた簡単なサンプルを作成しました。
+## コレは何？
+- `terraform_remote_state` を使ったので備忘録を兼ねた簡単なサンプルを作成しました(providerはAWS)。
 - 独立して実行管理されているIAM Roleを管理するディレクトリ（`iam` と `iam2`があり、 `iam` 実行後に `iam2` が実行される）があり、 `iam2` 側で `iam` の実行結果に依存する情報を使用したいケースを想定しています。
 
 ## 構成
